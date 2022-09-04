@@ -1,0 +1,152 @@
+# test-2
+
+soraq@DESKTOP-C0D3BNP MINGW64 ~/OneDrive/Desktop/AXSOS AG/Assignment II Learning to Commit/test
+$ git in it
+git: 'in' is not a git command. See 'git --help'.
+
+The most similar commands are
+        init
+        svn
+
+soraq@DESKTOP-C0D3BNP MINGW64 ~/OneDrive/Desktop/AXSOS AG/Assignment II Learning to Commit/test
+$ git init
+Initialized empty Git repository in C:/Users/soraq/OneDrive/Desktop/AXSOS AG/Assignment II Learning to Commit/test/.git/
+
+soraq@DESKTOP-C0D3BNP MINGW64 ~/OneDrive/Desktop/AXSOS AG/Assignment II Learning to Commit/test (master)
+$ git add .
+
+soraq@DESKTOP-C0D3BNP MINGW64 ~/OneDrive/Desktop/AXSOS AG/Assignment II Learning to Commit/test (master)
+$ git commit -m "first one"
+[master (root-commit) 92b835c] first one
+ 2 files changed, 19 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 style.css
+
+soraq@DESKTOP-C0D3BNP MINGW64 ~/OneDrive/Desktop/AXSOS AG/Assignment II Learning to Commit/test (master)
+$ got log
+bash: got: command not found
+
+soraq@DESKTOP-C0D3BNP MINGW64 ~/OneDrive/Desktop/AXSOS AG/Assignment II Learning to Commit/test (master)
+$ git log
+commit 92b835c02b4d1563f1b802640dd933233027e17e (HEAD -> master)
+Author: Sura Qalalwa <suraqalalwa@outlook.com>
+Date:   Sun Sep 4 12:58:02 2022 +0300
+
+    first one
+
+soraq@DESKTOP-C0D3BNP MINGW64 ~/OneDrive/Desktop/AXSOS AG/Assignment II Learning to Commit/test (master)
+$ git commit -m "sec commit"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+soraq@DESKTOP-C0D3BNP MINGW64 ~/OneDrive/Desktop/AXSOS AG/Assignment II Learning to Commit/test (master)
+$ git log
+commit 92b835c02b4d1563f1b802640dd933233027e17e (HEAD -> master)
+Author: Sura Qalalwa <suraqalalwa@outlook.com>
+Date:   Sun Sep 4 12:58:02 2022 +0300
+
+    first one
+
+soraq@DESKTOP-C0D3BNP MINGW64 ~/OneDrive/Desktop/AXSOS AG/Assignment II Learning to Commit/test (master)
+$ git add .
+
+soraq@DESKTOP-C0D3BNP MINGW64 ~/OneDrive/Desktop/AXSOS AG/Assignment II Learning to Commit/test (master)
+$ git log
+commit 92b835c02b4d1563f1b802640dd933233027e17e (HEAD -> master)
+Author: Sura Qalalwa <suraqalalwa@outlook.com>
+Date:   Sun Sep 4 12:58:02 2022 +0300
+
+    first one
+
+soraq@DESKTOP-C0D3BNP MINGW64 ~/OneDrive/Desktop/AXSOS AG/Assignment II Learning to Commit/test (master)
+$ git log
+commit 92b835c02b4d1563f1b802640dd933233027e17e (HEAD -> master)
+Author: Sura Qalalwa <suraqalalwa@outlook.com>
+Date:   Sun Sep 4 12:58:02 2022 +0300
+
+    first one
+
+soraq@DESKTOP-C0D3BNP MINGW64 ~/OneDrive/Desktop/AXSOS AG/Assignment II Learning to Commit/test (master)
+$ git remote add origin https://github.com/SuraQalalwa/test-2.git
+
+soraq@DESKTOP-C0D3BNP MINGW64 ~/OneDrive/Desktop/AXSOS AG/Assignment II Learning to Commit/test (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 520 bytes | 520.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/SuraQalalwa/test-2.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+soraq@DESKTOP-C0D3BNP MINGW64 ~/OneDrive/Desktop/AXSOS AG/Assignment II Learning to Commit/test (master)
+$ git log
+commit 92b835c02b4d1563f1b802640dd933233027e17e (HEAD -> master, origin/master)
+Author: Sura Qalalwa <suraqalalwa@outlook.com>
+Date:   Sun Sep 4 12:58:02 2022 +0300
+
+    first one
+
+soraq@DESKTOP-C0D3BNP MINGW64 ~/OneDrive/Desktop/AXSOS AG/Assignment II Learning to Commit/test (master)
+$ git add .
+
+soraq@DESKTOP-C0D3BNP MINGW64 ~/OneDrive/Desktop/AXSOS AG/Assignment II Learning to Commit/test (master)
+$ git commit -m "sec commit"
+[master aa5fe3a] sec commit
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+soraq@DESKTOP-C0D3BNP MINGW64 ~/OneDrive/Desktop/AXSOS AG/Assignment II Learning to Commit/test (master)
+$ git log
+commit aa5fe3a859416f2b0d896906f8ea8271daeb3d11 (HEAD -> master)
+Author: Sura Qalalwa <suraqalalwa@outlook.com>
+Date:   Sun Sep 4 13:00:54 2022 +0300
+
+    sec commit
+
+commit 92b835c02b4d1563f1b802640dd933233027e17e (origin/master)
+Author: Sura Qalalwa <suraqalalwa@outlook.com>
+Date:   Sun Sep 4 12:58:02 2022 +0300
+
+    first one
+
+soraq@DESKTOP-C0D3BNP MINGW64 ~/OneDrive/Desktop/AXSOS AG/Assignment II Learning to Commit/test (master)
+$ git revet 92b835c02b4d1563f1b802640dd933233027e17e
+git: 'revet' is not a git command. See 'git --help'.
+
+The most similar command is
+        revert
+
+soraq@DESKTOP-C0D3BNP MINGW64 ~/OneDrive/Desktop/AXSOS AG/Assignment II Learning to Commit/test (master)
+$ git revert 92b835c02b4d1563f1b802640dd933233027e17e
+CONFLICT (modify/delete): style.css deleted in (empty tree) and modified in HEAD.  Version HEAD of style.css left in tree.
+error: could not revert 92b835c... first one
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+
+soraq@DESKTOP-C0D3BNP MINGW64 ~/OneDrive/Desktop/AXSOS AG/Assignment II Learning to Commit/test (master|REVERTING)
+$ git add .
+
+soraq@DESKTOP-C0D3BNP MINGW64 ~/OneDrive/Desktop/AXSOS AG/Assignment II Learning to Commit/test (master|REVERTING)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 360 bytes | 360.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/SuraQalalwa/test-2.git
+   92b835c..aa5fe3a  master -> master
+
+soraq@DESKTOP-C0D3BNP MINGW64 ~/OneDrive/Desktop/AXSOS AG/Assignment II Learning to Commit/test (master|REVERTING)
+$
